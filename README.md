@@ -1,9 +1,9 @@
 # Pyadiomics-based-glioma-grading
-This project uses the BRATS(Brain Tumor Segmentation Challenge) 2018 dataset to grade different types of brain tumors  (HGG and LGG) by extracting features by fusing the different MRI modalities present in the dataset.
+This project uses the BRATS(Brain Tumor Segmentation Challenge) 2018 dataset to grade different types of brain tumors  (HGG and LGG) by extracting features from the different MRI modalities present in the dataset.
 
 The dataset contains 4 3D MRI modalities: T1-weighted, T2-weighted, T1-contrast enhanced, FLair images. The segmented image(image which has only the tumor part) has 3 Region of Interest labeled as 1,2,4. I have made 3 segemneted images from the dataset as follows:
 1. Using only the region labelled '1'.
-2. Using region labelled '1' and '2'.
+2. Using region labelled '1' and '4'.
 3. Using region labelled '1', '2' and '4'.
 
 Now, the other 4 images (t1,t2,t1c and flair) are fused using DWT(discrete wavelet transform). 
